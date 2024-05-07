@@ -1,0 +1,17 @@
+{
+  "name": "js-projects",
+  "version": "1.0.0",
+  "description": "projects are based on MERN stack.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./Project1/style.css --watch"
+  },
+  "author": "yash walke",
+  "license": "ISC",
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
