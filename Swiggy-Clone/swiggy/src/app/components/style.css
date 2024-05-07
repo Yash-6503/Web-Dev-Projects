@@ -1,0 +1,35 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.img1{
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    border-radius: 15px;
+    width: 100%;
+    height:100%;
+    
+}
+
+li{
+    margin-top: 10px;
+}
+
+
+.Scroll{
+    -ms-overflow-style: none;
+        /* IE and Edge */
+    scrollbar-width: none;
+}
+.Scroll{
+    -ms-overflow-style: none;
+        /* IE and Edge */
+    scrollbar-width: none;
+}
+
+
+.start{
+    font-family: "Inter", sans-serif;
+}
+
+
