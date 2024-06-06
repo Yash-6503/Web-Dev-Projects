@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Clock</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Orbitron:wght@400..900&display=swap"
+            rel="stylesheet">
+       
+    </head>
+
+    <body>
+
+        <div class="b">
+            <div class="clock">
+                <h2>Digital Clock</h2>
+                <p id="time"></p>
+                <div class="box">
+                    <p id="date"></p>
+                    <p id="day"></p>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+
+            //print the current time with 1000 interval into demo id of paragraph
+            let demo = document.getElementById('time');
+            setInterval(() => {
+                demo.innerHTML = new Date().toLocaleTimeString();
+            }, 1000);
+
+            //print the current date with into time id of paragraph
+            let time = document.getElementById('date');
+            time.innerHTML = new Date().toLocaleDateString();
+
+            //print the current day into demo id of paragraph
+            let day = document.getElementById('day');
+            day.innerHTML = new Date().toLocaleDateString('en-US', {
+                weekday: 'long'
+            });
+
+
+        </script>
+    </body>
+
+</html>
